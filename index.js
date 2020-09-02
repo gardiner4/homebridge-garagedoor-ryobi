@@ -180,7 +180,7 @@ GarageCmdAccessory.prototype.getServices = function() {
   this.informationService
 	  .setCharacteristic(Characteristic.Manufacturer, 'Ryobi Garage-door Opener')
 	  .setCharacteristic(Characteristic.Model, 'Homebridge Plugin')
-	  .setCharacteristic(Characteristic.SerialNumber, '001');
+	  .setCharacteristic(Characteristic.SerialNumber, '002');
 
   this.garageDoorService.getCharacteristic(Characteristic.TargetDoorState)
   .on('set', this.setState.bind(this));
