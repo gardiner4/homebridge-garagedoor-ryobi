@@ -63,7 +63,7 @@ class Ryobi_GDO_API {
     getDeviceID(callback) {
 		this.debug("getDeviceID");
 
-		if (this.deviceid && typeof this.deviceid !== 'function') {
+		if (this.deviceid) {
 			if (this.debug_sensitive) this.debug("doorid: " + this.deviceid);
 			return callback(null, this.deviceid);
 		}
